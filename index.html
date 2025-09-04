@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RM TECH - Advanced Level AI Assistant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="light-mode">
+    <canvas class="canvas-bg" id="interactiveBg"></canvas>
+
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fas fa-robot logo-icon"></i>
+                <h1>RM TECH</h1>
+            </div>
+            <button class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i> Dark Mode
+            </button>
+        </header>
+
+        <div class="main-content">
+            <div class="chat-container">
+                <div class="chat-header">
+                    <h2>AI Assistant</h2>
+                    <div class="language-selector">
+                        <i class="fas fa-globe"></i>
+                        <select id="languageSelect">
+                            <option value="en">English</option>
+                            <option value="si">Sinhala</option>
+                            <option value="ta">Tamil</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="chat-messages" id="chatMessages">
+                    <div class="message bot-message">
+                        Hello! I'm RM TECH, your advanced technology assistant. How can I help you with Engineering Technology, Science for Technology, or ICT today?
+                    </div>
+                </div>
+                
+                <!-- File Upload Area -->
+                <div class="upload-area" id="uploadArea">
+                    <i class="fas fa-cloud-upload-alt upload-icon"></i>
+                    <p>Drag & drop files here or click to upload</p>
+                    <p class="small">Supported: Images, PDF, DOC, DOCX, TXT</p>
+                    <input type="file" id="fileInput" style="display: none;" multiple accept="image/*,.pdf,.doc,.docx,.txt">
+                </div>
+                
+                <div class="chat-input">
+                    <input type="text" id="userInput" placeholder="Type your question here...">
+                    <button id="sendButton"><i class="fas fa-paper-plane"></i></button>
+                    <button class="voice-btn" id="voiceButton"><i class="fas fa-microphone"></i></button>
+                    <button class="tts-btn" id="ttsButton" title="Read last response"><i class="fas fa-volume-up"></i></button>
+                </div>
+            </div>
+
+            <div class="features-panel">
+                <h2>Features</h2>
+                <div class="feature-item" id="uploadFeature">
+                    <div class="feature-icon">
+                        <i class="fas fa-file-upload"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Upload Files</h3>
+                        <p>Upload images, PDFs, and other files for analysis</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Multi-language Support</h3>
+                        <p>Change the bot's language to Sinhala, Tamil, or English</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-microphone"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Voice Input & Output</h3>
+                        <p>Ask questions and get answers using voice</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="subjects-section">
+            <h2>Subjects We Cover</h2>
+            <div class="subjects-grid">
+                <div class="subject-card">
+                    <i class="fas fa-cogs subject-icon"></i>
+                    <h3>Engineering Technology</h3>
+                    <p>Get assistance with concepts, problem-solving, and project ideas in Engineering Technology.</p>
+                </div>
+                <div class="subject-card">
+                    <i class="fas fa-flask subject-icon"></i>
+                    <h3>Science for Technology</h3>
+                    <p>Understand scientific principles and their applications in modern technology.</p>
+                </div>
+                <div class="subject-card">
+                    <i class="fas fa-laptop-code subject-icon"></i>
+                    <h3>Information & Communication Technology</h3>
+                    <p>Learn about programming, networking, databases, and other ICT concepts.</p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>For more explanations and tutorials, contact:</p>
+            <div class="footer-info">
+                <div><i class="fas fa-user"></i> Rusith Banuka</div>
+                <div><i class="fas fa-phone"></i> 077-340 2519</div>
+                <div><i class="fab fa-youtube"></i> Rusith Banuka YouTube Channel</div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
